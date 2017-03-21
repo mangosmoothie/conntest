@@ -20,3 +20,7 @@ Test the connection to an Oracle Database
     ```
     java -jar conntest.jar <url> <user> <password>
     ```
+    or (to keep retying for n seconds)
+    ```
+    java -jar conntest.jar <url> <user> <password> <retry # of seconds>
+    ```

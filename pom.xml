@@ -5,8 +5,12 @@
     <groupId>com.nlloyd</groupId>
     <artifactId>conntest</artifactId>
     <version>0.1-SNAPSHOT</version>
-
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
     <name>conntest</name>
+
 
     <dependencies>
         <dependency>
