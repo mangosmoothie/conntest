@@ -4,18 +4,13 @@ Test the connection to an Oracle Database
 
 ## To compile and run
 
-1. [download ojdbc7 driver](http://www.oracle.com/technetwork/database/features/jdbc/jdbc-drivers-12c-download-1958347.html) from Oracle and place in project root
-1. [optional] add connection details to conntest.java
-1. compile the class
-
+1. if you do not have the jdbc driver in your local repo, [download & install ojdbc7 driver](https://www.mkyong.com/maven/how-to-add-oracle-jdbc-driver-in-your-maven-local-repository/) from Oracle and place in project root
+1. *[optional]* add connection details to conntest.java
+1. create the uberjar
     ```
-    javac conntest.java
+    mvn package
     ```
-2. create the jar
-
-    ```
-    jar cvfm conntest.jar ./MANIFEST.MF ./conntest.class ./ojdbc7.jar
-    ```
+2. grab the jar at `target/conntest.jar`
 3. run the connection test
 
     ```

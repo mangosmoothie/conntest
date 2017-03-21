@@ -1,3 +1,0 @@
-Main-Class: conntest
-Class-path: ojdbc7.jar
-
