@@ -13,7 +13,7 @@ class conntest{
             user = "";
             pass = "";
         }
-        if(connstr == "" || (args != null && args.length > 0 && args.length != 3)){
+        if(connstr == "" || (args != null && args.length > 0 && args.length < 3)){
             System.out.println("usage: java conntest <connection_string> <username> <password> [retry for n seconds (default try once)]");
             System.exit(0);
         }
